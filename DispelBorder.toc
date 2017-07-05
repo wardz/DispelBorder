@@ -1,0 +1,8 @@
+﻿## Interface: 24300
+## Title: DispelBorder
+## Notes: Shows highlight border around enemy magic buffs like on retail.
+## OptionalDeps: FocusFrame
+## Version: 1.0
+## Author: Wardz
+
+DispelBorder.lua
