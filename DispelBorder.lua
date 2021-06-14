@@ -67,7 +67,24 @@ local function DebuffButtonUpdate(unitID)
     end
 end
 
-if GetBuildInfo() == "2.4.3" then
+local function ClassicUpdateAuras(self)
+    local unit = self.unit
+    if not UnitCanAttack("player", unit) then return end
+
+    local selfName = self:GetName().."Buff"
+    for i = 1, 32 do
+        local name, _, _, debuffType = UnitAura(unit, i, "HELPFUL")
+        if not name then return end
+
+        if debuffType == "Magic" then
+            _G[selfName..i.."Stealable"]:Show()
+        end
+    end
+end
+
+if WOW_PROJECT_ID then -- Classic TBC/Era
+    hooksecurefunc("TargetFrame_UpdateAuras", ClassicUpdateAuras)
+elseif GetBuildInfo() == "2.4.3" then -- TBC old
     hooksecurefunc("TargetDebuffButton_Update", DebuffButtonUpdate)
     if FocusFrameLoaded then
         hooksecurefunc("FocusDebuffButton_Update", DebuffButtonUpdate)
