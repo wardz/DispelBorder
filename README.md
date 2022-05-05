@@ -1,5 +1,5 @@
-# DispelBorder TBC & Vanilla
-Shows highlight border around enemy magic buffs like on retail. (For patch 2.4.3 and 1.12.1)
+# DispelBorder Classic
+Shows highlight border around enemy magic buffs like on retail. (For patch 2.4.3 and 1.12.1, also equivalent retail classic patches)
 
 This addon is meant to be as simple as possible, so things like auto-disabling the addon while not having a dispel/spellsteal ability are not included.
 Also, **only Blizzard frames + FocusFrame are currently supported.**
@@ -10,4 +10,4 @@ Also, **only Blizzard frames + FocusFrame are currently supported.**
 1. Download latest [version here.](https://github.com/wardz/DispelBorder/releases)
 2. Extract (unzip) the downloaded file into your `WoW/Interface/AddOns` folder.
 3. Remove any suffixes from the addon's folder name. E.g: `DispelBorder-v1.0` to `DispelBorder`.
-4. (Vanilla only) Enable [loading out of date addons.](https://support.curse.com/hc/en-us/articles/204270025--WoW-Loading-Out-of-Date-AddOns)
+4. You may have to enable loading out of date addons.
